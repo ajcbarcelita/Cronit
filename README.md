@@ -39,8 +39,9 @@ It allows you to create habits, categorize them, track completions, and visualiz
 ## 🛠 Technology Stack
 
 - **Java** – Core programming language.  
-- **Gradle** – Build tool and dependency management.  
+- **Maven** – Build tool and dependency management.  
 - **JUnit 5** – Unit testing framework for reliability.  
+- **Mockito** – Mocking framework for unit tests.  
 - **SLF4J + Logback** – Logging for debugging and monitoring.  
 - **MySQL + JDBC** – Relational database for storing user data and habit logs.
 
