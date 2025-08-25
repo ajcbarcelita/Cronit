@@ -42,7 +42,6 @@ It allows you to create habits, categorize them, track completions, and visualiz
 - **Maven** – Build tool and dependency management.  
 - **JUnit 5** – Unit testing framework for reliability.  
 - **Mockito** – Mocking framework for unit tests.  
-- **SLF4J + Logback** – Logging for debugging and monitoring.  
 - **MySQL + JDBC** – Relational database for storing user data and habit logs.
 
 ---
