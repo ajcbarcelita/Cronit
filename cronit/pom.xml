@@ -20,6 +20,13 @@
                 </configuration>
             </plugin>
 
+            <!-- Surefire plugin to detect JUnit Tests-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version> <!-- supports JUnit 5 -->
+            </plugin>
+
             <!-- Shade plugin to make fat JAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -89,6 +96,7 @@
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -109,6 +117,13 @@
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
             <version>7.0.1</version>
+        </dependency>
+
+        <!-- Argon2 for password hashing -->
+        <dependency>
+            <groupId>de.mkammerer</groupId>
+            <artifactId>argon2-jvm</artifactId>
+            <version>2.4</version>
         </dependency>
 
     </dependencies>

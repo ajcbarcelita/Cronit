@@ -6,6 +6,7 @@ import com.cronit.util.*;
 import java.sql.*;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class UserDAOImpl implements UserDAO {
     
@@ -170,7 +171,7 @@ public class UserDAOImpl implements UserDAO {
     public void deleteUser(int user_id) {
         String sql = "DELETE FROM users WHERE user_id = ?";
 
-        try (Connection conn = DBUtil.getConnection();
+        try (Connection conn = DBConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setInt(1, user_id);

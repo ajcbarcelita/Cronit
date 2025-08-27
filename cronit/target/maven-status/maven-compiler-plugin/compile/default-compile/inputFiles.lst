@@ -1,3 +1,16 @@
 /home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/util/DBConnection.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/dao/HabitLogDAO.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/util/ConsoleColors.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/dao/UserDAO.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/util/PasswordUtil.java
 /home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/Main.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/dao/TagDAO.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/dao/HabitTagDAO.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/dao/UserDAOImpl.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/model/Tag.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/model/Habit.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/model/HabitTag.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/dao/HabitDAO.java
 /home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/model/User.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/model/HabitLog.java
+/home/apoptosis/Documents/Cronit/cronit/src/main/java/com/cronit/view/MainView.java

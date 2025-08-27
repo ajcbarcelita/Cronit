@@ -1,3 +1,16 @@
-com/cronit/model/User.class
+com/cronit/view/MainView.class
 com/cronit/Main.class
+com/cronit/dao/UserDAO.class
+com/cronit/dao/HabitDAO.class
+com/cronit/model/Habit.class
+com/cronit/dao/HabitLogDAO.class
+com/cronit/model/HabitTag.class
+com/cronit/dao/HabitTagDAO.class
+com/cronit/model/HabitLog.class
+com/cronit/dao/TagDAO.class
+com/cronit/model/User.class
+com/cronit/dao/UserDAOImpl.class
+com/cronit/util/PasswordUtil.class
+com/cronit/util/ConsoleColors.class
+com/cronit/model/Tag.class
 com/cronit/util/DBConnection.class
