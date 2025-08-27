@@ -16,6 +16,11 @@ public class DBConnection {
             config.setJdbcUrl("jdbc:mysql://localhost:3306/cronit");
             config.setUsername("root");
             config.setPassword("SousouNoFrieren.#6950");
+            config.setMaximumPoolSize(10);       // max concurrent connections
+            config.setMinimumIdle(2);           // keep a couple ready
+            config.setIdleTimeout(300000);      // 5 minutes
+            config.setMaxLifetime(1800000);     // 30 minutes (before recycling connections)
+            config.setConnectionTimeout(30000); // 30 seconds max wait
 
             dataSource = new HikariDataSource(config);
         } catch (Exception e) {
