@@ -88,6 +88,7 @@ CREATE TABLE IF NOT EXISTS `cronit`.`tags` (
   `tag_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` INT UNSIGNED NOT NULL,
   `name` VARCHAR(50) NOT NULL,
+  `color` VARCHAR(7) NOT NULL,
   PRIMARY KEY (`tag_id`),
   CONSTRAINT `fk_tags_1`
     FOREIGN KEY (`user_id`)

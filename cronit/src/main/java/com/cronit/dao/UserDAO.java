@@ -10,5 +10,5 @@ public interface UserDAO {
     List<User> getAllUsers();
     boolean insertUser(User user);
     boolean updateUser(User user);
-    void deleteUser(int user_id);
+    boolean deleteUser(int user_id);
 }

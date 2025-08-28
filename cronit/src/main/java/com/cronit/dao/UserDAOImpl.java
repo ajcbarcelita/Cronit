@@ -168,23 +168,18 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public void deleteUser(int user_id) {
+    public boolean deleteUser(int user_id) {
         String sql = "DELETE FROM users WHERE user_id = ?";
 
         try (Connection conn = DBConnection.getConnection();
-            PreparedStatement stmt = conn.prepareStatement(sql)) {
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-            stmt.setInt(1, user_id);
-            int rowsDeleted = stmt.executeUpdate();
+            pstmt.setInt(1, user_id);
 
-            if (rowsDeleted > 0) {
-                System.out.println("User deleted successfully.");
-            } else {
-                System.out.println("No user found with id: " + user_id);
-            }
-
+            return pstmt.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
+            return false; // indicate failure
         }
     }
 }
