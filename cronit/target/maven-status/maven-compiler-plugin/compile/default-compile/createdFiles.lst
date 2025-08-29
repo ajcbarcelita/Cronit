@@ -1,8 +1,10 @@
 com/cronit/view/MainView.class
 com/cronit/Main.class
+com/cronit/controller/UserController.class
 com/cronit/dao/UserDAO.class
 com/cronit/dao/HabitDAO.class
 com/cronit/model/Habit.class
+com/cronit/util/InputValidator.class
 com/cronit/dao/HabitLogDAO.class
 com/cronit/view/AuthView.class
 com/cronit/model/HabitTag.class

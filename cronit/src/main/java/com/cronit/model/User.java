@@ -13,6 +13,17 @@ public class User {
     private LocalDateTime created_at;
     private LocalDateTime updated_at;
 
+    public User (String username, String email, String lname, String fname, String mname, String pw_hash) {
+        this.username = username;
+        this.email = email;
+        this.lname = lname;
+        this.fname = fname;
+        this.mname = mname;
+        this.pw_hash = pw_hash;
+        this.created_at = LocalDateTime.now();
+        this.updated_at = LocalDateTime.now();
+    }
+
     public User(int user_id, String username, String email, String lname, String fname, String mname, String pw_hash, LocalDateTime created_at, LocalDateTime updated_at) {
         this.user_id = user_id;
         this.username = username;

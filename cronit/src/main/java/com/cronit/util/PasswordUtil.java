@@ -23,7 +23,7 @@ public final class PasswordUtil {
         }
     }
 
-    public static boolean verifyPassword(String hash, String pw) {
+    public static boolean verifyPassword(String pw, String hash) {
         char[] password = pw.toCharArray();
         Argon2 argon2 = Argon2Factory.create(Argon2Types.ARGON2id);
         try {

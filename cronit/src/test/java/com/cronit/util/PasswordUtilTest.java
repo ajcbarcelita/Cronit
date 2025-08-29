@@ -10,7 +10,7 @@ class PasswordUtilTest {
         String password = "password123!";
         String hash = PasswordUtil.hashPassword(password);
         assertNotNull(hash, "Hash should not be null.");
-        assertTrue(PasswordUtil.verifyPassword(hash, password), "Password should verify correctly.");
+        assertTrue(PasswordUtil.verifyPassword(password, hash), "Password should verify correctly.");
     }
 
     @Test
@@ -21,7 +21,7 @@ class PasswordUtilTest {
         String hash = PasswordUtil.hashPassword(password);
 
         assertFalse(
-            PasswordUtil.verifyPassword(hash, wrongPassword),
+            PasswordUtil.verifyPassword(wrongPassword, hash),
             "Wrong password should not verify."
         );
     }
@@ -45,8 +45,8 @@ class PasswordUtilTest {
         String hash2 = PasswordUtil.hashPassword(pw);
 
         assertNotEquals(hash1, hash2, "Same password should generate different hashes due to random salt");
-        assertTrue(PasswordUtil.verifyPassword(hash1, pw), "First hash should verify.");
-        assertTrue(PasswordUtil.verifyPassword(hash2, pw), "Second hash should verify.");
+        assertTrue(PasswordUtil.verifyPassword(pw, hash1), "First hash should verify.");
+        assertTrue(PasswordUtil.verifyPassword(pw, hash2), "Second hash should verify.");
     }
     
 }
