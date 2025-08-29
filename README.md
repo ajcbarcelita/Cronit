@@ -3,6 +3,8 @@
 **Cronit** is a **Command-Line Interface (CLI) habit tracker** designed to help users monitor, manage, and improve their daily routines.  
 It allows you to create habits, categorize them, track completions, and visualize progress over time.
 
+**Disclaimer: This serves as personal practice and refresher for OOP in Java + SQL topics covered in CCINFOM in preparation for ITDBADM.**
+
 ---
 
 ## 🚀 Features
